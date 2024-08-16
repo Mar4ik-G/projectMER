@@ -10,3 +10,11 @@ export const getUsers = async (req: Request, res: Response) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+export const createUser = async (req: Request, res: Response) => {
+  try{
+
+  }catch (err){
+
+  }
+}
