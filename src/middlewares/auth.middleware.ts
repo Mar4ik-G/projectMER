@@ -13,7 +13,6 @@ export const protect = (req: IGetUserAuthInfoRequest, res: Response, next: NextF
 
   try {
     const decoded = jwt.verify(token, JWT_ACCESS_SECRET) as { id: string };
-    console.log(req,"req");
     req.user = decoded.id;
     next();
   } catch (err) {

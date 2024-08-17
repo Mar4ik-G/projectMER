@@ -18,6 +18,9 @@ const generateRefreshToken = (userId: string) => {
 
 // Register User
 export const register = async (req: Request, res: Response) => {
+
+  console.log(req.body,"req.body");
+
   const { name, email, password } = req.body;
 
   try {
